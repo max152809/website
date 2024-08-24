@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta = "UTF-8">
+<title>The Website Of Maxwell Leussler </title>
+<link href="maxstyles.css" rel="stylesheet" type="text/css">
+<link  class = left rel = "icon" type = "image/x-icon" href="C:\HTML\max-website\logo4.png">
+
+
+</head>
+
+<body>
+
+<div>
+    <h1 id = "top">MaxLeussler.com</h1>
+</div>    
+
+<div>
+    <h1>Projects</h1>
+</div>
+
+<div id="navbar">
+    <nav>
+        <a href="website.html"><b> Home | </b></a>
+        <a href="projects.html"><b> Projects | </b></a>
+        <a href="aboutme.html"><b> About Me | </b></a>
+    </nav>
+</div>
+
+<div id="navbar">
+    <a href="#divesim"> dive sim (python)</a>
+    <a href="#stock"> stock (python)</a>
+    <a href="#Power BI">Power BI</a>
+    <a href="#SQL">SQL</a>
+</div>
+
+<h2 id = "divesim"><u>Dive Simulator</u></h2>
+
+<p >In my final year at Babson College I was apart of the Swim and Dive team 
+specifically the dive team. With one of the last meets of the year approaching I had a goal 
+score I wanted to achieve.
+I was worried that I would not get that score so I created a simulation using Python in Jupyter Notebook
+to create 10,000 iterations of the meet to see how well I might do. The thing about 
+diving as a sport is the scores are calculable. Each diver does 11 dives each with a specific (dd) or
+ "diving difficulty."The dd is then followed by a number ex. 2.1, 1.7, 2.2, 3.0 ect.
+Each of these dd ratingsare also a multiplier. The middle 3 scores from judges are added 
+together and then multiplied by the dd. Usually in small meets there will only be 3 judges so all of their scores count. 
+In larger meets there are five to seven judges where only the middle 3
+scores are used to avoid bias in either way. In my simulation I used 9 judges and took the middle 3 scores. 
+First I ask the user to put in their dive code for example a 103c is a forward(1) 1.5(the third number represents a 1/2
+rotation-3) tuck (c). I created a dictionary that autamatically fills in the corresponding difficulty.
+The user is then asked to create a range for each dive, their highest and their lowest possible scores.
+The simulation runs 10,000 times randomly picking a number between the range for each dive then picking the middle 3 values.
+So in 10,000 iterations of any possible combination of scores the final likelyhood of what the final score should be is revealed.
+</p>
+<img class="image"   src="C:\HTML\max-website\divesim\divesimpic1.png">
+<img class="image"   src="C:\HTML\max-website\divesim\divesimpic2.png">
+<img class="image"   src="C:\HTML\max-website\divesim\divesimpic3.png">
+<img class="image"   src="C:\HTML\max-website\divesim\divesimpic4.png">
+<img class="image"   src="C:\HTML\max-website\divesim\divesimpic5.png">
+<img class="image"   src="C:\HTML\max-website\divesim\divesimpic6.png">
+<img class="image"   src="C:\HTML\max-website\divesim\divesimpic7.png">
+<br>
+<img class="image"   src="C:\HTML\max-website\divesim\divesimresults1.png">
+<img class="image"   src="C:\HTML\max-website\divesim\divesimresults2.png">
+
+<p1 style="font-size: large;"><b>_______________________________________________________________________________________________________________________________________________________________________________________________________</b></p1>
+
+<h2 id="stock"><u>Net Worth Recorder</u></h2>
+
+<div id="navbar">
+    <a href="#divesim"> dive sim (python)</a>
+    <a href="#stock"> stock (python)</a>
+    <a href="#Power BI">Power BI</a>
+    <a href="#SQL">SQL</a>
+    <a href="#top">Back to top</a>
+</div>
+
+<p> This is Python code done in Jupyter Notebook to record my networth for given stocks at any given point. 
+    I am an amateur investor and simply wanted to see if I had sold all of my stocks at their
+    most valuable how much would I have made. 
+</p>
+
+<p> This first section is me describing the stocks I own for python to use yahoo finance to get stock information.
+    I have chosen to omit the dates of when I bought the stock and how much of that stock I bought. I then continue to 
+    summarize each stock under the criteria of high and low between two dates I have chosen. That information
+    is taken from the table format and just put into individual rows for each stock describing the high and low.
+    I also describe the current value of the stock for the current day. I multiply the quantity of stock I bought by
+    the highest it has been in a range of dates, the low it has been, and what it is now. In the final section I created a statement
+    that says if the stock is net positive it will tell me it has seen returns and if not it will tell me it has not seen returns
+    and by just how much it has or has not. 
+</p>
+<img class="image"   src="C:\HTML\max-website\stockrecord\stocksummary1.png">
+<img class="image"   src="C:\HTML\max-website\stockrecord\stocksummary1.png">
+<img class="image"   src="C:\HTML\max-website\stockrecord\stocksummary1.png">
+<br>
+<img class="image"   src="C:\HTML\max-website\stockrecord\stocksummaryresults1.png">
+<br>
+<p>In this next section I get the difference in days between when I bought the stock and the current day.
+    I created a for loop where it loops every day starting at the first day I bought the stock then advances one day ending on the current day.
+    Each stock is recorded at its close for the day and then multiplied by the quantity owned for that stock. I add up all the stocks and quantities
+    together to get my total net worth each day. That number is appended to a list which is kept recorded.
+    The 1170 shows the number of days since I purchased each stock and each number is my net worth per day.
+</p>
+<img class="image"   src="C:\HTML\max-website\stockrecord\stockrecord1.png">
+<br>
+<img class="image"   src="C:\HTML\max-website\stockrecord\stockrecordresults1.png">
+<br>
+<p> This final section is simply the ability to view the previsously recorded numbers. </p>
+<img class="image"   src="C:\HTML\max-website\stockrecord\stockview1.png">
+<br>
+<img class="image"   src="C:\HTML\max-website\stockrecord\stockviewresult1.png">
+
+<p1 style="font-size: large;"><b>_______________________________________________________________________________________________________________________________________________________________________________________________________</b></p1>
+
+<h2 id = "Power BI"><u>F1 Power BI</u></h2>
+
+<div id="navbar">
+    <a href="#divesim"> dive sim (python)</a>
+    <a href="#stock"> stock (python)</a>
+    <a href="#Power BI">Power BI</a>
+    <a href="#SQL">SQL</a>
+    <a href="#top">Back to top</a>
+</div>
+
+<p>In this section I will show off some of the work I have done in Power BI and the viusalizations that are possible.
+    This is not the extent to which I or Power BI is capable but I thought this would be the most interesting and quick example I can give.
+    I had previously downloaded a few F1 datasets from kaggle. I beleive they are mostly accurate I am unaware of how the data
+    was recorded but it lines up with existing known numbers. For the first few installments I decided to track the rivalry between
+    Lewis Hamlton and Max Verstappen as since 2014 they are the onlt two champions execpt in 2016 when there was one other person.
+    But in the past 15 years onlt RedBull or Mercedes has won and I included them as well.  
+</p>
+
+<img class="image"   src="C:\HTML\max-website\f1visuals\f1visual1.png">
+<p>Power BI is capable of showing trends as well geographic data. When I click on the monaco ciruict on the bar chart all the other charts
+    filter for monaco and the geographic chart zooms in on that location.
+
+</p>
+<img class="image"   src="C:\HTML\max-website\f1visuals\f1visual4.png">
+<img class="image"   src="C:\HTML\max-website\f1visuals\f1visual3.png">
+<p>This last one is a bit confusing but it shows the avgerage finishing position per year per track for one driver.
+    It is being filtered by amount of times finishing at a track and finishing position. For example I zoomed in 
+    on monaco 2018 where the fininshing position for Max Verstappen was 9th. He has raced that track 5 times and the color key on top as well
+    as zooming in would tell each year. 
+</p>
+<img class="image"   src="C:\HTML\max-website\f1visuals\f1visual2.png">
+
+<p1 style="font-size: large;"><b>_______________________________________________________________________________________________________________________________________________________________________________________________________</b></p1>
+
+<h2 id="SQL"><u>SQL</u></h2>
+
+<div id="navbar">
+    <a href="#divesim"> dive sim (python)</a>
+    <a href="#stock"> stock (python)</a>
+    <a href="#Power BI">Power BI</a>
+    <a href="#SQL">SQL</a>
+    <a href="#top">Back to top</a>
+
+</div><p>In this section I will show some of the work I have done in sql again this is not the extent of my abilities, this is a 
+    quick showcase of a project I worked on. There are over 3-4 dozen different visuals I could have shown with varying information
+    and processes. I will keep it to just what I think demonstrates both my and sql's abilities.
+</p>
+
+<br>
+<p>
+This first image is just what I named example3 for easy naming purposes. It shows the name of each person the position they 
+finished in for each race, the poisnts they recieved for each race, their starting position and what I called name_year
+which is just what I decided was best to combine the year and the race name. It was at first confusing because while the year and name were connected
+by a common ID in the dataset it was sometimes difficult to sort them so i decided that it would be best to combine them so now each race is unique.
+Each year and race together show up exactly once where as each year and each race separetely appear multiple times.
+</p>
+
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlbackground1.png">
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlresults1.png">
+<br>
+<p>The next two sets up images are simila with only minor tweaks I wanted to show who has the most total points ever,
+    how many positions they have ever gained how many times they started in the top 10 and how many total races they have completed.
+    In the next set I added starts in top 5 and number of years raced which while they do sound very similar show slightly different data.
+    While I only sorted the data I am sure there is more to do with it like the ration of wins to total races or ratio of points to positions gained. 
+    There are so many I cannot think of them all which sound slike I am dodging a question but really.
+</p>
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlbackground2.png">
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlresults2.png">
+<br>
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlbackground3.png">
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlresults3.png">
+<br>
+<p>The last set of images just shows the total number of poits any individual racer has won at any given track.
+    for this example I again chose monaco but I could have chosen any one. 
+</p>
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlbackground4.png">
+<img class="image"   src="C:\HTML\max-website\sqlvisuals\sqlresults4.png">
+
+
+<p class = "center large">This text is big in the middle and verdana</p>
+
+</body>
+</html>
